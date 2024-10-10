@@ -16,39 +16,40 @@ To contribute to the project, please **fork the repository** to your GitHub acco
 4. **Automatic Review**: Once a PR is raised, the system will fetch the PR data and use an AI model to generate a review.
 5. **Post Review Comment**: The AI-generated review will be posted as a comment on the PR.
 
-## 1. Installation
+#  Installation
+## 1. Fork And Clone The Repository
 
 1.  **Fork the Repository**:
 
   
 
-- Go to the repository URL and click on the **Fork** button to create a copy under your GitHub account.
+    - Go to the repository URL and click on the **Fork** button to create a copy under your GitHub account.
 
-  
+      
 
 2.  **Clone the Forked Repository**:
 
   
 
-- In your terminal, clone the repository to your local machine:
+    - In your terminal, clone the repository to your local machine:
 
-```bash
+      ```bash
 
-git clone <your-forked-repository-url>
+      git clone <your-forked-repository-url>
 
-```
+      ```
 
 3.  **Navigate to the Project Directory**:
 
   
 
-- Change into the project directory:
+    - Change into the project directory:
 
-  ```bash
+      ```bash
 
-  cd <WorkikAssignment>
+      cd <WorkikAssignment>
 
-  ```
+      ```
 
 ## 2. Set Up the Client (React)
 
@@ -123,6 +124,20 @@ git clone <your-forked-repository-url>
   npm start
 
   ```
+
+## Listening for Webhook Requests
+
+To listen for incoming webhook requests, you can use the following SSH command to create a reverse tunnel. This command will forward requests from `serveo.net` to your local server running on port `5001`.
+
+```bash
+ssh -R 80:localhost:5001 serveo.net
+```
+### Instructions:
+1. Open your terminal.
+2. Run the above command.
+3. Follow any prompts that may appear.
+4. Your server should now be accessible via the URL provided by Serveo, allowing you to receive webhook requests.
+
 
 ## Features
   - AI-Powered Code Review: Uses the Hugging Face GPT-2 model to analyze code for quality and adherence to coding standards.
