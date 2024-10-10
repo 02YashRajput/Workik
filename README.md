@@ -16,7 +16,7 @@ To contribute to the project, please **fork the repository** to your GitHub acco
 4. **Automatic Review**: Once a PR is raised, the system will fetch the PR data and use an AI model to generate a review.
 5. **Post Review Comment**: The AI-generated review will be posted as a comment on the PR.
 
-## 1. Fork and Clone the Repository
+## 1. Installation
 
 1.  **Fork the Repository**:
 
